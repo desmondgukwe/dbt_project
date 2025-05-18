@@ -1,0 +1,17 @@
+
+name: 'health_analytics_assessment'
+version: '1.0'
+config-version: 2
+
+profile: 'default'
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_modules"]
+
+models:
+  health_analytics_assessment:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
