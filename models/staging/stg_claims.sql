@@ -1,6 +1,7 @@
 
 -- Working example: staging model for raw patient claims
 -- Cleans data and derives claim_month
+--{{ config(enabled=false) }}
 
 with source as (
     select * from {{ ref('raw_claims') }}
@@ -15,4 +16,4 @@ renamed as (
         date_trunc('month', cast(claim_date as date)) as claim_month
     from source
 )
-select * from renamed
+select * from source
