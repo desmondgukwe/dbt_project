@@ -1,11 +1,16 @@
-
 name: 'health_analytics_assessment'
 version: '1.0'
 config-version: 2
 
-profile: 'default'
+profile: 'default'  # Used locally; dbt Cloud uses connection config instead
 
 model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+docs-paths: ["docs"]
+analysis-paths: ["analysis"]
+
 target-path: "target"
 clean-targets: ["target", "dbt_modules"]
 
