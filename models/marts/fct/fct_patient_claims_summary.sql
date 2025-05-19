@@ -1,4 +1,3 @@
--- models/marts/fct/fct_patient_claims_summary.sql
 
 with claims as (
     select distinct

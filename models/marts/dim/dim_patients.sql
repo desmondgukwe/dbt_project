@@ -9,7 +9,6 @@
 --   - Total claim amount
 --   - Days since first claim
 
--- models/marts/dim/dim_patients.sql
 
 with patients as (
     select * from {{ ref('raw_patients') }}
