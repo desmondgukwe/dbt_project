@@ -1,4 +1,4 @@
---{{ config(enabled=false) }}
+--
 
 -- PART 1
 -- TASK: Create a dimension model for patients
