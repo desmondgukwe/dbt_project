@@ -1,7 +1,7 @@
 name: 'health_analytics_assessment'
 version: '1.0'
 config-version: 2
-
+#Tests Misiing will add them later this week.
 profile: 'default'  # Used locally; dbt Cloud uses connection config instead
 
 model-paths: ["models"]
